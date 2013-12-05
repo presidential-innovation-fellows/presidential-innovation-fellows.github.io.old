@@ -1,137 +1,37 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Presidential Innovation Fellows</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+---
+layout: default
+---
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-		
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+<div class="row">
+  <div class="yearbook">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+    <h1 class="logo">
+      <a href="http://whitehouse.gov/innovationfellows">
+        Presidential Innovation Fellows
+      </a>
+    </h1>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div>
-          <div class="yearbook">
-				<h1 class="logo"><a href="http://whitehouse.gov/innovationfellows">Presidential Innovation Fellows</a></h1>
+    <ul class="years">
+    {% for year in site.data.alums %}
+      <li><a href="#{{ year[0] }}">{{ year[0] }}</a></li>
+    {% endfor %}
+    </ul>
 
+    {% for year in site.data.alums %}
+    {% assign year = year[0] %}
+    {% assign class = year[1] %}
+    <div class="class-year">
 
-				<ul class="years">
-					<li>
-						<a href="#2012-2013">2012-2013</a>
-					</li>
-					<li>
-						<a href="#2013-2014">2013-2014</a>
-					</li>
-				</ul>					
+    <h2 id="{{ year }}">{{ year }}</h2>
 
-				<div class="class-year">
-					<h2><a name="2013-2014">2013-2014</a></h2>
-					<ul class="roster">
-						<li><a href="#">Aaron Snow</a></li>			
-						<li><a href="#">Adam Dole</a></li>
-						<li><a href="#">Adam Riggs</a></li>			
-						<li><a href="#">Alison Rowland</a></li>		
-						<li><a href="#">Amos Stone</a></li>			
-						<li><a href="#">Ben Willman</a></li>		
-						<li><a href="#">Beverly Park Woolf</a></li>	
-						<li><a href="#">Charles Worthington</a></li>
-						<li><a href="#">Chris Cairns</a></li>		
-						<li><a href="#">Claire Holroyd</a></li>	
-						<li><a href="#">Dain Miller</a></li>		
-						<li><a href="#">Dave Caraway</a></li>		
-						<li><a href="#">Derek Frempong</a></li>		
-						<li><a href="#">Diego Mayer-Cantu</a></li>	
-						<li><a href="#">Erin Maneri Akred</a></li>	
-						<li><a href="#">Garren Givens</a></li>		
-						<li><a href="#">Geoff Mulligan</a></li>		
-						<li><a href="#">Greg Godbout</a></li>		
-						<li><a href="#">Hillary Hartley</a></li>	
-						<li><a href="#">Jackie Kazil</a></li>		
-						<li><a href="#">James Sanders</a></li>		
-						<li><a href="#">Jason Shen</a></li>			
-						<li><a href="#">Joe Polastre</a></li>		
-						<li><a href="#">John Felleman</a></li>		
-						<li><a href="#">John Teeter</a></li>		
-						<li><a href="#">John Kemp</a></li>			
-						<li><a href="#">Justin Grevich</a></li>		
-						<li><a href="#">Kin Lane</a></li>			
-						<li><a href="#">Martin Ringlein</a></li>	
-						<li><a href="#">Michelle Hertzfeld</a></li>	
-						<li><a href="#">Mollie Ruskin</a></li>		
-						<li><a href="#">Matthew Theall</a></li>		
-						<li><a href="#">Nayan Jain</a></li>			
-						<li><a href="#">Raphael Villas</a></li>		
-						<li><a href="#">Rob Read</a></li>			
-						<li><a href="#">Rob Baker</a></li>			
-						<li><a href="#">Sarah Allen</a></li>		
-						<li><a href="#">Sean Herron</a></li>		
-						<li><a href="#">Scott Hartley</a></li>		
-						<li><a href="#">Scott Wu</a></li>			
-						<li><a href="#">Sokwoo Rhee</a></li>		
-						<li><a href="#">Tom Black</a></li>			
-						<li><a href="#">Vidya Spandana</a></li>			
-					</ul>				
-				</div>
-				
-				<div class="class-year">				
-					<h2><a name="2012-2013">2012-2013</a></h2>
-					<ul class="roster">
-						<li><a href="#">Adam Becker</a></li>		
-						<li><a href="#">Ben Balter</a></li>		
-						<li><a href="#">Clay Johnson</a></li>			
-						<li><a href="#">Danny Chapman</a></li>		
-						<li><a href="#">Dmitry Kachaev</a></li>		
-						<li><a href="#">Greg Gershman</a></li>		
-						<li><a href="#">Henry Wei</a></li>
-						<li><a href="#">Ian Kalin</a></li>			
-						<li><a href="#">Jed Wood</a></li>			
-						<li><a href="#">Kara DeFrias</a></li>		
-						<li><a href="#">Karl Mehta</a></li>
-						<li><a href="#">Matt McCall</a></li>		
-						<li><a href="#">Marina Martin</a></li>
-						<li><a href="#">Nathaniel Manning</a></li>	
-						<li><a href="#">Nick Bramble</a></li>		
-						<li><a href="#">Philip Ashlock</a></li>		
-						<li><a href="#">Ryan Panchadsaram</a></li>	
-						<li><a href="#">Raphael Majma</a></li>
-					</ul>	
-				</div>
-				
-		  </div>
-        </div>
-      </div>
+      <ul class="roster">
+      {% for alum in class %}
+        <li>{{ alum }}</i>
+      {% endfor %}
+      </ul>
 
-      <footer>
-        
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    {% endfor %}
 
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
-
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
-</html>
+    </div>
+  </div>
+</div>
