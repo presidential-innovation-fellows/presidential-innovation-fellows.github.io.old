@@ -7,7 +7,116 @@
 
 
 
-
+	 .yearbook {
+		margin : 0 auto;
+		width : 70%;    
+		display : block;            
+	}
+	
+	a {
+		color : #000;
+	}
+	
+	.yearbook, h2 {
+		font-family: 'Droid Serif', serif;
+	}
+	
+	h2 {
+		font-weight: 400; 							
+	}
+	
+	 .yearbook .logo a {
+		height : 10em;	
+		height : 30rem;
+		height : 50vw;							
+	}
+	
+	 .yearbook .logo a {
+		width : 100%;                
+		text-indent : -9999em;
+		display : block;
+		overflow : hidden;		
+		background : url(../img/pif-logo.png) no-repeat;									
+		background-position: top center !important;
+		background-size: contain;		
+	}
+	
+	.svg .yearbook .logo a {
+		background : url(../img/pif-logo.svg) no-repeat;	
+		background-size: contain !important;		
+	}
+	
+	ul.years, ul.roster {
+		list-style-type : none;	
+		margin : 0;
+		padding : 0;							
+	}
+	
+	ul.years {
+		text-align : center;
+		font-size : .75em;	
+		font-size : 1.5rem;
+		font-size : 3.0vw;				
+	}
+	
+	ul.years li {
+		display : inline-block;	
+		margin-right : .1em;
+		font-style : italic;			
+	}
+	
+	ul.years li:before {
+		content:" • ";				
+	}
+	
+	ul.years li:first-child:before {
+		content:"";				
+	}			
+	
+	ul.roster {
+		border-top : 1px solid #ccc;
+	}
+	
+	.class-year {
+		margin-top : 5em;
+		margin-top : 10rem;
+		margin-top : 15vw;				
+	}
+	
+	.class-year h2 {
+		font-size : 1.5em;	
+		font-size : 3.5rem;
+		font-size : 6.0vw;	
+		text-align : center;
+	}	
+	
+	.class-year h2 a, 
+	.class-year h2 a:hover {
+		color : #000;
+		text-decoration : none;				
+	}		
+	
+	ul.roster li {
+		border-bottom : 1px solid #ccc;
+		text-align : center;
+		
+		font-size : 1.0em;	
+		font-size : 3.0rem;
+		font-size : 5.0vw;				
+	}		
+	
+	ul.roster li a {
+		width : 100%;
+		padding : .5em;
+		display : inline-block;
+	}
+	
+	ul.roster li a:hover {
+		text-decoration : none;
+		color : #000;
+		background-color : #ccc;
+		
+	}
 
 
 
