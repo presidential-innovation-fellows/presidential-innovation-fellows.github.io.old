@@ -18,14 +18,12 @@ layout: default
     </ul>
 
     {% for year in site.data.alums %}
-    {% assign year = year[0] %}
-    {% assign class = year[1] %}
     <div class="class-year">
 
-    <h2 id="{{ year }}">{{ year }}</h2>
+    <h2 id="{{ year[0] }}">{{ year[0] }}</h2>
 
       <ul class="roster">
-      {% for alum in class %}
+      {% for alum in year[1] %}
         <li>{{ alum }}</i>
       {% endfor %}
       </ul>
