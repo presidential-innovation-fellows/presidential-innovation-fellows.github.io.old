@@ -84,7 +84,7 @@
 	}
 	
 	ul.years li:first-child:before {
-		content:"";				
+		content:" ";				
 	}			
 	
 	ul.roster {
