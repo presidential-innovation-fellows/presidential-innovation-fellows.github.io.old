@@ -9,8 +9,21 @@
 
 	 .yearbook {
 		margin : 0 auto;
-		width : 70%;    
+		width : 100%;    
 		display : block;            
+	}
+	
+	
+	/* Minimum width of 600 pixels. */
+    @media screen and (min-width: 600px) {
+    	body {
+    	    margin : 0;
+    	    padding : 0;
+    	}
+    	
+    	.yearbook {
+	    	width : 70%;        	
+    	}
 	}
 	
 	a {
@@ -62,7 +75,8 @@
 	ul.years li {
 		display : inline-block;	
 		margin-right : .1em;
-		font-style : italic;			
+		font-style : italic;
+		word-break: keep-all;			
 	}
 	
 	ul.years li:before {
