@@ -24,7 +24,13 @@ layout: default
 
       <ul class="roster">
       {% for alum in year[1] %}
-        <li>{{ alum }}</i>
+		<li>
+		{% if alum.name and alum.website %}
+        	<a href="{{ alum.website }}">{{ alum.name }}</a>
+		{% else %}
+        	{{ alum }}		
+		{% endif %}
+		</i>
       {% endfor %}
       </ul>
 
